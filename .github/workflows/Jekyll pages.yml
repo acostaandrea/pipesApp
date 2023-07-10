@@ -36,6 +36,10 @@ jobs:
         with:
             cache: 'npm'
             node-version: 18
+      - name: Install del-cli
+        run: npm install del-cli --save-dev
+      - name: Install copyfiles
+        run: npm i copyfiles --save-dev
       - name: Install dependencies
         run: npm ci
       - name: Build
